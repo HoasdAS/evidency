@@ -1,0 +1,6 @@
+framework module Pods_evidencia {
+  umbrella header "Pods-evidencia-umbrella.h"
+
+  export *
+  module * { export * }
+}

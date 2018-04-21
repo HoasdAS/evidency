@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5286317E5E6D537111FDCAEA /* Pods_evidenciaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6369B8F4589597AF85230F7 /* Pods_evidenciaTests.framework */; };
+		B2945C2BE9B329E392BC7018 /* Pods_evidencia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22687B7EF6FA38ADF6891088 /* Pods_evidencia.framework */; };
+		D5F607EAC1C038FC0C48B6F8 /* Pods_evidenciaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543BB75CEF89824BE1F1A317 /* Pods_evidenciaUITests.framework */; };
+		F338F2BF208AC4AE00B5ED02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F338F2BD208AC4AE00B5ED02 /* Main.storyboard */; };
+		F338F2C1208AC4BB00B5ED02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F338F2C0208AC4BB00B5ED02 /* Assets.xcassets */; };
+		F338F2C4208AC4BB00B5ED02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F338F2C2208AC4BB00B5ED02 /* LaunchScreen.storyboard */; };
+		F338F2CF208AC4BC00B5ED02 /* evidenciaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F338F2CE208AC4BC00B5ED02 /* evidenciaTests.swift */; };
+		F338F2DA208AC4BC00B5ED02 /* evidenciaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F338F2D9208AC4BC00B5ED02 /* evidenciaUITests.swift */; };
+		F338F2E9208AC55400B5ED02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F338F2E8208AC55400B5ED02 /* AppDelegate.swift */; };
+		F338F2ED208AC71B00B5ED02 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F338F2EC208AC71B00B5ED02 /* User.swift */; };
+		F338F2EF208AC72400B5ED02 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F338F2EE208AC72400B5ED02 /* Post.swift */; };
+		F338F2F1208AC72D00B5ED02 /* Date+externsion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F338F2F0208AC72D00B5ED02 /* Date+externsion.swift */; };
+		F338F2F3208AC73500B5ED02 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F338F2F2208AC73500B5ED02 /* UIColor+extension.swift */; };
+		F338F2F5208AC76400B5ED02 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F338F2F4208AC76400B5ED02 /* LoginController.swift */; };
+		F338F2F7208AC81300B5ED02 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F338F2F6208AC81300B5ED02 /* MapController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F338F2CB208AC4BC00B5ED02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F338F2AE208AC4AD00B5ED02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F338F2B5208AC4AD00B5ED02;
+			remoteInfo = evidencia;
+		};
+		F338F2D6208AC4BC00B5ED02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F338F2AE208AC4AD00B5ED02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F338F2B5208AC4AD00B5ED02;
+			remoteInfo = evidencia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22687B7EF6FA38ADF6891088 /* Pods_evidencia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_evidencia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EE39ADFBF9DF28540E6EACF /* Pods-evidencia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-evidencia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-evidencia/Pods-evidencia.debug.xcconfig"; sourceTree = "<group>"; };
+		543BB75CEF89824BE1F1A317 /* Pods_evidenciaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_evidenciaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		576B09922FF51BA35D32D5B1 /* Pods-evidenciaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-evidenciaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-evidenciaTests/Pods-evidenciaTests.release.xcconfig"; sourceTree = "<group>"; };
+		6E1A986B62C10873E1A71E04 /* Pods-evidenciaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-evidenciaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-evidenciaUITests/Pods-evidenciaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		88EC2F49E6FB7B6C8B5277DA /* Pods-evidenciaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-evidenciaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-evidenciaTests/Pods-evidenciaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C42D0EC0C0DF6033379360A1 /* Pods-evidenciaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-evidenciaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-evidenciaUITests/Pods-evidenciaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D74D10CB294D71741A861697 /* Pods-evidencia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-evidencia.release.xcconfig"; path = "Pods/Target Support Files/Pods-evidencia/Pods-evidencia.release.xcconfig"; sourceTree = "<group>"; };
+		F338F2B6208AC4AD00B5ED02 /* evidencia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = evidencia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F338F2BE208AC4AE00B5ED02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F338F2C0208AC4BB00B5ED02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F338F2C3208AC4BB00B5ED02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F338F2C5208AC4BB00B5ED02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F338F2CA208AC4BC00B5ED02 /* evidenciaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = evidenciaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F338F2CE208AC4BC00B5ED02 /* evidenciaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = evidenciaTests.swift; sourceTree = "<group>"; };
+		F338F2D0208AC4BC00B5ED02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F338F2D5208AC4BC00B5ED02 /* evidenciaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = evidenciaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F338F2D9208AC4BC00B5ED02 /* evidenciaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = evidenciaUITests.swift; sourceTree = "<group>"; };
+		F338F2DB208AC4BC00B5ED02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F338F2E8208AC55400B5ED02 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../../../Desktop/swiftproject-master/AppDelegate.swift"; sourceTree = "<group>"; };
+		F338F2EC208AC71B00B5ED02 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = "../../swiftproject-master/User.swift"; sourceTree = "<group>"; };
+		F338F2EE208AC72400B5ED02 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = "../../swiftproject-master/Post.swift"; sourceTree = "<group>"; };
+		F338F2F0208AC72D00B5ED02 /* Date+externsion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+externsion.swift"; path = "../../swiftproject-master/Date+externsion.swift"; sourceTree = "<group>"; };
+		F338F2F2208AC73500B5ED02 /* UIColor+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+extension.swift"; path = "../../swiftproject-master/UIColor+extension.swift"; sourceTree = "<group>"; };
+		F338F2F4208AC76400B5ED02 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginController.swift; path = "../../swiftproject-master/LoginController.swift"; sourceTree = "<group>"; };
+		F338F2F6208AC81300B5ED02 /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapController.swift; path = "../../swiftproject-master/MapController.swift"; sourceTree = "<group>"; };
+		F6369B8F4589597AF85230F7 /* Pods_evidenciaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_evidenciaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F338F2B3208AC4AD00B5ED02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2945C2BE9B329E392BC7018 /* Pods_evidencia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F338F2C7208AC4BC00B5ED02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5286317E5E6D537111FDCAEA /* Pods_evidenciaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F338F2D2208AC4BC00B5ED02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5F607EAC1C038FC0C48B6F8 /* Pods_evidenciaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		198D6A0416CB99A8094D323F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22687B7EF6FA38ADF6891088 /* Pods_evidencia.framework */,
+				F6369B8F4589597AF85230F7 /* Pods_evidenciaTests.framework */,
+				543BB75CEF89824BE1F1A317 /* Pods_evidenciaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A08AE22117DE8ECCAF797C69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EE39ADFBF9DF28540E6EACF /* Pods-evidencia.debug.xcconfig */,
+				D74D10CB294D71741A861697 /* Pods-evidencia.release.xcconfig */,
+				88EC2F49E6FB7B6C8B5277DA /* Pods-evidenciaTests.debug.xcconfig */,
+				576B09922FF51BA35D32D5B1 /* Pods-evidenciaTests.release.xcconfig */,
+				C42D0EC0C0DF6033379360A1 /* Pods-evidenciaUITests.debug.xcconfig */,
+				6E1A986B62C10873E1A71E04 /* Pods-evidenciaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F338F2AD208AC4AD00B5ED02 = {
+			isa = PBXGroup;
+			children = (
+				F338F2B8208AC4AD00B5ED02 /* evidencia */,
+				F338F2CD208AC4BC00B5ED02 /* evidenciaTests */,
+				F338F2D8208AC4BC00B5ED02 /* evidenciaUITests */,
+				F338F2B7208AC4AD00B5ED02 /* Products */,
+				A08AE22117DE8ECCAF797C69 /* Pods */,
+				198D6A0416CB99A8094D323F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F338F2B7208AC4AD00B5ED02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F338F2B6208AC4AD00B5ED02 /* evidencia.app */,
+				F338F2CA208AC4BC00B5ED02 /* evidenciaTests.xctest */,
+				F338F2D5208AC4BC00B5ED02 /* evidenciaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F338F2B8208AC4AD00B5ED02 /* evidencia */ = {
+			isa = PBXGroup;
+			children = (
+				F338F2E8208AC55400B5ED02 /* AppDelegate.swift */,
+				F338F2F6208AC81300B5ED02 /* MapController.swift */,
+				F338F2F4208AC76400B5ED02 /* LoginController.swift */,
+				F338F2BD208AC4AE00B5ED02 /* Main.storyboard */,
+				F338F2C0208AC4BB00B5ED02 /* Assets.xcassets */,
+				F338F2C2208AC4BB00B5ED02 /* LaunchScreen.storyboard */,
+				F338F2C5208AC4BB00B5ED02 /* Info.plist */,
+				F338F2EC208AC71B00B5ED02 /* User.swift */,
+				F338F2EE208AC72400B5ED02 /* Post.swift */,
+				F338F2F0208AC72D00B5ED02 /* Date+externsion.swift */,
+				F338F2F2208AC73500B5ED02 /* UIColor+extension.swift */,
+			);
+			path = evidencia;
+			sourceTree = "<group>";
+		};
+		F338F2CD208AC4BC00B5ED02 /* evidenciaTests */ = {
+			isa = PBXGroup;
+			children = (
+				F338F2CE208AC4BC00B5ED02 /* evidenciaTests.swift */,
+				F338F2D0208AC4BC00B5ED02 /* Info.plist */,
+			);
+			path = evidenciaTests;
+			sourceTree = "<group>";
+		};
+		F338F2D8208AC4BC00B5ED02 /* evidenciaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F338F2D9208AC4BC00B5ED02 /* evidenciaUITests.swift */,
+				F338F2DB208AC4BC00B5ED02 /* Info.plist */,
+			);
+			path = evidenciaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F338F2B5208AC4AD00B5ED02 /* evidencia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F338F2DE208AC4BC00B5ED02 /* Build configuration list for PBXNativeTarget "evidencia" */;
+			buildPhases = (
+				5758F5B60F055C75306795BE /* [CP] Check Pods Manifest.lock */,
+				F338F2B2208AC4AD00B5ED02 /* Sources */,
+				F338F2B3208AC4AD00B5ED02 /* Frameworks */,
+				F338F2B4208AC4AD00B5ED02 /* Resources */,
+				04BCC80795F1AF5DE7FDD049 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = evidencia;
+			productName = evidencia;
+			productReference = F338F2B6208AC4AD00B5ED02 /* evidencia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F338F2C9208AC4BC00B5ED02 /* evidenciaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F338F2E1208AC4BC00B5ED02 /* Build configuration list for PBXNativeTarget "evidenciaTests" */;
+			buildPhases = (
+				C9501F2FF4AB8260628FFA84 /* [CP] Check Pods Manifest.lock */,
+				F338F2C6208AC4BC00B5ED02 /* Sources */,
+				F338F2C7208AC4BC00B5ED02 /* Frameworks */,
+				F338F2C8208AC4BC00B5ED02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F338F2CC208AC4BC00B5ED02 /* PBXTargetDependency */,
+			);
+			name = evidenciaTests;
+			productName = evidenciaTests;
+			productReference = F338F2CA208AC4BC00B5ED02 /* evidenciaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F338F2D4208AC4BC00B5ED02 /* evidenciaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F338F2E4208AC4BC00B5ED02 /* Build configuration list for PBXNativeTarget "evidenciaUITests" */;
+			buildPhases = (
+				FEEA3B8657983346E620EA85 /* [CP] Check Pods Manifest.lock */,
+				F338F2D1208AC4BC00B5ED02 /* Sources */,
+				F338F2D2208AC4BC00B5ED02 /* Frameworks */,
+				F338F2D3208AC4BC00B5ED02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F338F2D7208AC4BC00B5ED02 /* PBXTargetDependency */,
+			);
+			name = evidenciaUITests;
+			productName = evidenciaUITests;
+			productReference = F338F2D5208AC4BC00B5ED02 /* evidenciaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F338F2AE208AC4AD00B5ED02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = evidenciaaa;
+				TargetAttributes = {
+					F338F2B5208AC4AD00B5ED02 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+					};
+					F338F2C9208AC4BC00B5ED02 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = F338F2B5208AC4AD00B5ED02;
+					};
+					F338F2D4208AC4BC00B5ED02 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = F338F2B5208AC4AD00B5ED02;
+					};
+				};
+			};
+			buildConfigurationList = F338F2B1208AC4AD00B5ED02 /* Build configuration list for PBXProject "evidencia" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F338F2AD208AC4AD00B5ED02;
+			productRefGroup = F338F2B7208AC4AD00B5ED02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F338F2B5208AC4AD00B5ED02 /* evidencia */,
+				F338F2C9208AC4BC00B5ED02 /* evidenciaTests */,
+				F338F2D4208AC4BC00B5ED02 /* evidenciaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F338F2B4208AC4AD00B5ED02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F338F2C4208AC4BB00B5ED02 /* LaunchScreen.storyboard in Resources */,
+				F338F2C1208AC4BB00B5ED02 /* Assets.xcassets in Resources */,
+				F338F2BF208AC4AE00B5ED02 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F338F2C8208AC4BC00B5ED02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F338F2D3208AC4BC00B5ED02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04BCC80795F1AF5DE7FDD049 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-evidencia/Pods-evidencia-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-evidencia/Pods-evidencia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5758F5B60F055C75306795BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-evidencia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9501F2FF4AB8260628FFA84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-evidenciaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEEA3B8657983346E620EA85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-evidenciaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F338F2B2208AC4AD00B5ED02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F338F2E9208AC55400B5ED02 /* AppDelegate.swift in Sources */,
+				F338F2F7208AC81300B5ED02 /* MapController.swift in Sources */,
+				F338F2F1208AC72D00B5ED02 /* Date+externsion.swift in Sources */,
+				F338F2F3208AC73500B5ED02 /* UIColor+extension.swift in Sources */,
+				F338F2ED208AC71B00B5ED02 /* User.swift in Sources */,
+				F338F2EF208AC72400B5ED02 /* Post.swift in Sources */,
+				F338F2F5208AC76400B5ED02 /* LoginController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F338F2C6208AC4BC00B5ED02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F338F2CF208AC4BC00B5ED02 /* evidenciaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F338F2D1208AC4BC00B5ED02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F338F2DA208AC4BC00B5ED02 /* evidenciaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F338F2CC208AC4BC00B5ED02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F338F2B5208AC4AD00B5ED02 /* evidencia */;
+			targetProxy = F338F2CB208AC4BC00B5ED02 /* PBXContainerItemProxy */;
+		};
+		F338F2D7208AC4BC00B5ED02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F338F2B5208AC4AD00B5ED02 /* evidencia */;
+			targetProxy = F338F2D6208AC4BC00B5ED02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F338F2BD208AC4AE00B5ED02 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F338F2BE208AC4AE00B5ED02 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F338F2C2208AC4BB00B5ED02 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F338F2C3208AC4BB00B5ED02 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F338F2DC208AC4BC00B5ED02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F338F2DD208AC4BC00B5ED02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F338F2DF208AC4BC00B5ED02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EE39ADFBF9DF28540E6EACF /* Pods-evidencia.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = evidencia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = evi.evidencia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "evidencia/evidencia-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F338F2E0208AC4BC00B5ED02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D74D10CB294D71741A861697 /* Pods-evidencia.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = evidencia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = evi.evidencia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "evidencia/evidencia-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F338F2E2208AC4BC00B5ED02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88EC2F49E6FB7B6C8B5277DA /* Pods-evidenciaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = evidenciaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = evi.evidenciaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/evidencia.app/evidencia";
+			};
+			name = Debug;
+		};
+		F338F2E3208AC4BC00B5ED02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 576B09922FF51BA35D32D5B1 /* Pods-evidenciaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = evidenciaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = evi.evidenciaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/evidencia.app/evidencia";
+			};
+			name = Release;
+		};
+		F338F2E5208AC4BC00B5ED02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C42D0EC0C0DF6033379360A1 /* Pods-evidenciaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = evidenciaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = evi.evidenciaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = evidencia;
+			};
+			name = Debug;
+		};
+		F338F2E6208AC4BC00B5ED02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E1A986B62C10873E1A71E04 /* Pods-evidenciaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = evidenciaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = evi.evidenciaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = evidencia;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F338F2B1208AC4AD00B5ED02 /* Build configuration list for PBXProject "evidencia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F338F2DC208AC4BC00B5ED02 /* Debug */,
+				F338F2DD208AC4BC00B5ED02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F338F2DE208AC4BC00B5ED02 /* Build configuration list for PBXNativeTarget "evidencia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F338F2DF208AC4BC00B5ED02 /* Debug */,
+				F338F2E0208AC4BC00B5ED02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F338F2E1208AC4BC00B5ED02 /* Build configuration list for PBXNativeTarget "evidenciaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F338F2E2208AC4BC00B5ED02 /* Debug */,
+				F338F2E3208AC4BC00B5ED02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F338F2E4208AC4BC00B5ED02 /* Build configuration list for PBXNativeTarget "evidenciaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F338F2E5208AC4BC00B5ED02 /* Debug */,
+				F338F2E6208AC4BC00B5ED02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F338F2AE208AC4AD00B5ED02 /* Project object */;
+}
